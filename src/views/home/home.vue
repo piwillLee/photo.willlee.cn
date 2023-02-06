@@ -120,7 +120,8 @@ function handleAboutClick() {
 
 
   background: url(https://tbed.willlee.cn/thumbnails/277a8000eddc0f8257495e2e1b1531bf.png);
-  background-size: cover;
+  background-size: 400%;
+  background-position: top top;
 
   .bg {
     position: absolute;
