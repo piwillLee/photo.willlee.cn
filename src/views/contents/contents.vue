@@ -153,16 +153,12 @@ onMounted(() => {
       display: flex;
       flex-direction: row-reverse;
 
-
       .el-row {
-
         height: 100%;
         display: flex;
         flex-direction: row-reverse;
 
         .left {
-
-
           .textTop {
             // border: 1px solid red;
             display: flex;
