@@ -1,0 +1,27 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Poppins';
+}
+
+/* 隐藏滚轴 */
+body::-webkit-scrollbar {
+	display: none;
+}
+
+body {
+	/* 移动端下拉刷新 */
+	/* overscroll-behavior-y: contain; */
+
+	font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans;
+}
+
+.swiper-wrapper {
+	padding: 52px 52px !important;
+}
+
+.hover-cursor {
+	cursor: pointer;
+}
+:root {
+	--el-color-primary: rgb(78, 158, 20);
+}
