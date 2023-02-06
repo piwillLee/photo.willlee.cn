@@ -179,8 +179,6 @@ onMounted(() => {
         }
       }
 
-
-
       @media screen and (max-width: 600px) {
         .el-row {
           .text {
