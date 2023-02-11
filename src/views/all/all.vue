@@ -5,7 +5,7 @@
       <el-row class="content">
         <el-col :xs="12" :sm="12" :md="8" :lg="8" :xl="8" v-for="image in imgAllUrlList ">
           <div :ref="maskRef" class="imgContainer">
-            <img :ref="elColRef" class="img" :src="image.thumbnail" :data-src="image.source" />
+            <img :ref="elColRef" class="img" v-lazy="image.thumbnail" :data-src="image.source" />
           </div>
         </el-col>
       </el-row>

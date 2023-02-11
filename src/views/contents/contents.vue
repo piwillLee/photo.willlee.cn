@@ -8,6 +8,7 @@
           <el-col :xs="12" :sm="12" :md="12">
             <div class="img"
               :style="{ background: `url(${item.cover})`, backgroundSize: '800%', backgroundPosition: 'center center' }" />
+            <div class="imgCover"></div>
           </el-col>
           <el-col :xs="12" :sm="12" :md="12">
             <el-row>
@@ -231,35 +232,39 @@ onMounted(() => {
 
     .el-col {
       height: 300px;
+      position: relative;
+
     }
 
     .img {
       width: 100%;
       height: 100%;
-      background-size: cover;
+      background-size: 150%;
+      background-attachment: fixed;
       background-position: center center;
       background-repeat: no-repeat;
     }
 
-    .img:hover {
-      background-size: 100%;
-    }
+    .imgCover {
+      position: absolute;
+      top: 0;
 
-    .img::before {
       width: 100%;
       height: 100%;
-      content: '';
-      display: block;
-      backdrop-filter: blur(500px);
+      // background-color: red;
+      backdrop-filter: blur(300px);
+      background-attachment: fixed;
+
     }
 
-    .img:hover::before {
-      width: 100%;
-      height: 100%;
-      content: '';
-      display: block;
-      backdrop-filter: blur(150px);
-    }
+
+    // .img::before {
+    //   width: 100%;
+    //   height: 100%;
+    //   content: ' ';
+    //   display: block;
+    //   // backdrop-filter: blur(500px);
+    // }
 
     .text {
       padding: 16px;
